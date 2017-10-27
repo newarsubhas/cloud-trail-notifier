@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "aws-sdk": "^2.141.0"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.2"
+  },
+  "name": "CloudTrailNotifier",
+  "version": "0.0.1",
+  "description": "Send SNS alerts based on Cloud Trail events.",
+  "main": "CloudTrailNotifier.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prabhatpankaj/cloud-trail-notifier"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "@prabhatpankaj",
+  "license": "MIT"
+}
