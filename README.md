@@ -20,3 +20,28 @@ aws sns subscribe --topic-arn arn:aws:sns:us-east-1:502075345842:CloudTrailAlert
 check your mail and confirm subscription
 
 Update the parameter value below with the bucket name and create the role which will be used to execute the Lambda function (via Cloud Formation):
+
+```
+aws cloudformation create-stack --stack-name CloudTrailNotifierRole \
+                                --template-body file://templates/cloud_trail_notifier_role.json \
+                                --parameters ParameterKey=BucketName,ParameterValue=my-account-cloud-trail-logs \
+                                --capabilities CAPABILITY_IAM
+
+```
+Retrieve the name of the new role.
+
+```
+aws cloudformation describe-stacks --stack-name CloudTrailNotifierRole
+
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
+```
