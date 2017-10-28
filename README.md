@@ -52,7 +52,7 @@ aws lambda create-function \
 Update the file notification_configuration.json with the RoleARN and the LambdaARN and run the below to enable S3 Bucket Notifications for new logs to execute the function created above.
 
 ```
-aws s3api put-bucket-notification \
+aws s3api put-bucket-notification-configuration \
         --bucket my-account-cloud-trail-logs \
         --notification-configuration file://templates/notification_configuration.json
 ```
