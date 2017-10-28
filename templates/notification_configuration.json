@@ -1,8 +1,11 @@
 {
-  "CloudFunctionConfiguration": {
-    "Id": "CloudTrailNotifier",
-    "Events": ["s3:ObjectCreated:Put", "s3:ObjectCreated:Post"],
-    "CloudFunction": "arn:aws:lambda:us-east-1:502075345842:function:CloudTrailNotifier",
-    "InvocationRole": "arn:aws:iam::502075345842:role/CloudTrailNotifierRole-IAMRole-YRFONR2L5CB5"
-  }
+    "LambdaFunctionConfigurations": [
+        {
+            "Id": "CloudTrailNotifier",
+            "Events": [
+                "s3:ObjectCreated:*"
+            ],
+            "LambdaFunctionArn": "arn:aws:lambda:us-east-1:502075345842:function:CloudTrailNotifier"
+        }
+    ]
 }
